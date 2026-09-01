@@ -1,6 +1,8 @@
 schema_version: 1
 repository: AuthorOps-Skills
 skill_contract: docs/skill-spec.md
+status_values: [experimental, stable, deprecated]
+mode_values: [detect, explain, suggest, rewrite, transform, verify, audit]
 skills:
   - id: writing-idea-generation
     path: skills/writing/idea-generation/SKILL.md
@@ -16,6 +18,12 @@ skills:
     path: skills/writing/conclusion/SKILL.md
   - id: writing-transitions
     path: skills/writing/transitions/SKILL.md
+  - id: writing-title-optimization
+    path: skills/writing/title-optimization/SKILL.md
+  - id: writing-abstract-generation
+    path: skills/writing/abstract-generation/SKILL.md
+  - id: writing-keyword-selection
+    path: skills/writing/keyword-selection/SKILL.md
   - id: editing-grammar-check
     path: skills/editing/grammar-check/SKILL.md
   - id: editing-proofreading
@@ -44,6 +52,12 @@ skills:
     path: skills/editing/tone-check/SKILL.md
   - id: editing-terminology-consistency
     path: skills/editing/terminology-consistency/SKILL.md
+  - id: editing-parallelism-check
+    path: skills/editing/parallelism-check/SKILL.md
+  - id: editing-ambiguity-check
+    path: skills/editing/ambiguity-check/SKILL.md
+  - id: editing-jargon-check
+    path: skills/editing/jargon-check/SKILL.md
   - id: transformation-paraphrase
     path: skills/transformation/paraphrase/SKILL.md
   - id: transformation-meaning-preservation
@@ -56,7 +70,11 @@ skills:
     path: skills/transformation/compress/SKILL.md
   - id: transformation-voice-authenticity
     path: skills/transformation/voice-authenticity/SKILL.md
-  - id: research-question
+  - id: transformation-formalize
+    path: skills/transformation/formalize/SKILL.md
+  - id: transformation-plain-language
+    path: skills/transformation/plain-language/SKILL.md
+  - id: research-research-question
     path: skills/research/research-question/SKILL.md
   - id: research-objectives
     path: skills/research/objectives/SKILL.md
@@ -74,6 +92,12 @@ skills:
     path: skills/research/methodology-alignment/SKILL.md
   - id: research-bias-check
     path: skills/research/bias-check/SKILL.md
+  - id: research-fact-check
+    path: skills/research/fact-check/SKILL.md
+  - id: research-reproducibility-check
+    path: skills/research/reproducibility-check/SKILL.md
+  - id: research-counterevidence-check
+    path: skills/research/counterevidence-check/SKILL.md
   - id: citations-citation-generation
     path: skills/citations/citation-generation/SKILL.md
   - id: citations-citation-check
@@ -86,6 +110,12 @@ skills:
     path: skills/citations/source-claim-mapping/SKILL.md
   - id: citations-citation-style
     path: skills/citations/citation-style/SKILL.md
+  - id: citations-citation-relevance
+    path: skills/citations/citation-relevance/SKILL.md
+  - id: citations-citation-accuracy
+    path: skills/citations/citation-accuracy/SKILL.md
+  - id: citations-duplicate-reference-check
+    path: skills/citations/duplicate-reference-check/SKILL.md
   - id: academic-paper-structure
     path: skills/academic/paper-structure/SKILL.md
   - id: academic-abstract-review
@@ -96,6 +126,10 @@ skills:
     path: skills/academic/methodology-review/SKILL.md
   - id: academic-results-discussion-alignment
     path: skills/academic/results-discussion-alignment/SKILL.md
+  - id: academic-reviewer-response
+    path: skills/academic/reviewer-response/SKILL.md
+  - id: academic-key-contribution
+    path: skills/academic/key-contribution/SKILL.md
   - id: manuscripts-manuscript-structure
     path: skills/manuscripts/manuscript-structure/SKILL.md
   - id: manuscripts-chapter-structure
@@ -104,6 +138,8 @@ skills:
     path: skills/manuscripts/manuscript-consistency/SKILL.md
   - id: manuscripts-manuscript-readiness
     path: skills/manuscripts/manuscript-readiness/SKILL.md
+  - id: manuscripts-title-page-check
+    path: skills/manuscripts/title-page-check/SKILL.md
   - id: books-book-outline
     path: skills/books/book-outline/SKILL.md
   - id: books-chapter-purpose
@@ -114,12 +150,18 @@ skills:
     path: skills/books/character-consistency/SKILL.md
   - id: books-timeline-consistency
     path: skills/books/timeline-consistency/SKILL.md
+  - id: books-pacing-check
+    path: skills/books/pacing-check/SKILL.md
   - id: publishing-submission-requirements
     path: skills/publishing/submission-requirements/SKILL.md
   - id: publishing-journal-fit
     path: skills/publishing/journal-fit/SKILL.md
   - id: publishing-cover-letter
     path: skills/publishing/cover-letter/SKILL.md
+  - id: publishing-peer-review-readiness
+    path: skills/publishing/peer-review-readiness/SKILL.md
+  - id: publishing-ethics-disclosure-check
+    path: skills/publishing/ethics-disclosure-check/SKILL.md
   - id: quality-logical-fallacy-check
     path: skills/quality/logical-fallacy-check/SKILL.md
   - id: quality-contradiction-check
@@ -128,6 +170,12 @@ skills:
     path: skills/quality/overclaiming-check/SKILL.md
   - id: quality-completeness-check
     path: skills/quality/completeness-check/SKILL.md
+  - id: quality-numerical-consistency
+    path: skills/quality/numerical-consistency/SKILL.md
+  - id: quality-definition-consistency
+    path: skills/quality/definition-consistency/SKILL.md
+  - id: quality-assumption-check
+    path: skills/quality/assumption-check/SKILL.md
   - id: forensics-plagiarism-risk-review
     path: skills/forensics/plagiarism-risk-review/SKILL.md
   - id: forensics-quotation-integrity
@@ -136,3 +184,7 @@ skills:
     path: skills/forensics/attribution-audit/SKILL.md
   - id: forensics-final-document-audit
     path: skills/forensics/final-document-audit/SKILL.md
+  - id: forensics-self-plagiarism-risk
+    path: skills/forensics/self-plagiarism-risk/SKILL.md
+  - id: forensics-source-provenance
+    path: skills/forensics/source-provenance/SKILL.md
