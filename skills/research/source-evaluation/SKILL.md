@@ -1,13 +1,13 @@
 ---
 name: source-evaluation
-description: Evaluate the reliability, relevance, authority, currency, methodology, and evidentiary value of a source for a specific research claim.
-metadata:
-  category: research
-  maturity: core
-  version: "0.1.0"
+description: Evaluate a source's relevance, authority, transparency, recency, methodology, and limitations for a specific claim.
+version: 0.1.0
+status: experimental
+category: research
+mode: audit
 ---
 # Source Evaluation
 
-Evaluate a source in context rather than assigning a universal quality score. Examine author or institutional authority, publication venue, methodology, evidence, transparency, conflicts, date, relevance, and limitations.
+Assess the source for fit to the exact claim, author or institution credibility, publication context, methods, transparency, recency where relevant, and conflicts or limitations. Never equate prestige with correctness.
 
-Separate source credibility from whether it supports the specific claim. State what cannot be established from available evidence.
+Quality gates: claim-specific evaluation and explicit evidence limitations.

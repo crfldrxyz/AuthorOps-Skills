@@ -1,13 +1,13 @@
 ---
 name: readability-check
-description: Assess whether prose can be efficiently understood by its intended audience without reducing necessary technical or conceptual precision.
-metadata:
-  category: editing
-  maturity: core
-  version: "0.1.0"
+description: Evaluate whether prose is appropriately accessible for its intended audience.
+version: 0.1.0
+status: experimental
+category: editing
+mode: audit-and-suggest
 ---
 # Readability Check
 
-Evaluate sentence complexity, information density, terminology, discourse markers, paragraphing, and assumed reader knowledge. Use quantitative readability metrics only as supporting signals, never as the sole judgment.
+Assess sentence complexity, vocabulary burden, conceptual density, paragraphing, and assumed knowledge relative to the audience. Use numeric readability formulas only as signals, not as proof of quality.
 
-Separate accessibility problems from legitimate technical complexity. Return findings and targeted interventions.
+Quality gates: audience-relative judgment and preservation of technical precision.

@@ -1,15 +1,13 @@
 ---
 name: plagiarism-risk-review
-description: Identify passages that may create plagiarism or attribution risk through direct copying, close paraphrase, missing quotation, or missing attribution.
-metadata:
-  category: forensics
-  maturity: core
-  version: "0.1.0"
+description: Identify passages that may require source attribution or similarity investigation, without claiming a definitive plagiarism determination.
+version: 0.1.0
+status: experimental
+category: forensics
+mode: audit
 ---
-# Plagiarism Risk Review
+# Plagiarism-Risk Review
 
-Inspect supplied text and known source material for suspicious overlap. Distinguish direct quotation, properly attributed paraphrase, common language, and potentially unattributed reuse.
+Flag direct quotations without clear attribution, close paraphrases, unexplained borrowed structures, and passages whose provenance is unclear from the supplied material. Where a similarity corpus or checker is actually available, incorporate its evidence; otherwise state that limitation.
 
-A similarity finding is not a plagiarism determination. Report evidence and risk, not accusations. Recommend quotation, citation, rewriting, or source verification as appropriate.
-
-External corpus comparison requires an actual search or similarity service; this skill does not fabricate database results.
+Quality gates: never equate stylistic similarity with plagiarism and never claim database coverage that was not used.

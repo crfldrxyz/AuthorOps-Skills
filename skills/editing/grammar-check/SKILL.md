@@ -1,16 +1,13 @@
 ---
 name: grammar-check
-description: Detect and explain grammatical errors while preserving author intent, terminology, and voice.
-metadata:
-  category: editing
-  maturity: core
-  version: "0.1.0"
+description: Detect grammatical errors and explain the rule or construction involved.
+version: 0.1.0
+status: experimental
+category: editing
+mode: detect-and-explain
 ---
 # Grammar Check
 
-Parse sentence structure and check agreement, tense, mood, articles, determiners, pronouns, modifiers, conjunctions, and clause relationships. Distinguish actual errors from deliberate stylistic choices.
+Inspect agreement, tense, clause structure, modifiers, pronouns, articles, prepositions, and sentence completeness. Separate objective errors from dialectal or stylistic variation. Provide evidence from the supplied text and concise corrections.
 
-For each finding report location, original text, issue, rationale, correction, and confidence. Prefer the smallest effective correction and never silently rewrite the document.
-
-## Quality Gate
-Do not label a grammatical variation as an error solely because it differs from a preferred style guide.
+Quality gates: do not label a stylistic preference as an error; preserve intended meaning; distinguish uncertain cases.

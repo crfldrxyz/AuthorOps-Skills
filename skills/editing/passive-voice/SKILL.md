@@ -1,13 +1,13 @@
 ---
 name: passive-voice
-description: Identify and assess passive constructions for appropriateness, agency, emphasis, and readability.
-metadata:
-  category: style
-  maturity: core
-  version: "0.1.0"
+description: Detect passive constructions and explain their grammatical form and rhetorical effect.
+version: 0.1.0
+status: experimental
+category: editing
+mode: detect-and-explain
 ---
 # Passive Voice
 
-Detect passive constructions and classify their communicative purpose. Determine whether passive voice appropriately foregrounds the affected entity or omits an unknown or irrelevant actor.
+Identify passive constructions, optional agent phrases, and cases where grammatical voice affects emphasis. Treat passive voice as a valid construction, not an automatic defect.
 
-Flag only cases where agency is obscured unnecessarily or the construction harms clarity. Provide an active alternative only when justified.
+Quality gates: distinguish true passive constructions from lookalikes and avoid blanket recommendations.

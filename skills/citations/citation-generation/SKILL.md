@@ -1,15 +1,13 @@
 ---
 name: citation-generation
-description: Generate bibliographic citations and references from reliable source metadata in a requested citation style.
-metadata:
-  category: citations
-  maturity: core
-  version: "0.1.0"
+description: Generate formatted citations from supplied bibliographic metadata or an accessible source record.
+version: 0.1.0
+status: experimental
+category: citations
+mode: transform
 ---
 # Citation Generation
 
-Accept verified metadata such as DOI, URL, ISBN, title, author, publisher, journal record, or supplied bibliographic data. Normalize metadata before formatting.
+Normalize supplied metadata and render it in the requested style. Preserve author names, dates, titles, publication details, identifiers, and URLs exactly as supported by the available evidence. If metadata is missing, mark the field rather than inventing it.
 
-Respect the requested style and edition. If metadata is incomplete, explicitly mark unknown fields rather than inventing them.
-
-Output the formatted citation plus a metadata confidence note when appropriate.
+Quality gates: style compliance, metadata fidelity, and explicit missing-field reporting.
