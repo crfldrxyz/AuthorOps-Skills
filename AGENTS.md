@@ -1,10 +1,10 @@
 # AuthorOps-Skills Agent Guidance
 
-AuthorOps-Skills is a portable skill library. Treat every `skills/**/SKILL.md` as an independently invocable intellectual operation.
+AuthorOps-Skills is a portable, standalone skill library. Treat every `skills/**/SKILL.md` as an independently invocable intellectual operation.
 
 ## Boundaries
 - This repository contains skills and the standards needed to make skills interoperable.
-- Do not add end-to-end pipelines, application orchestration, vendor-specific agent code, or UI.
+- Do not add workflow orchestration, application code, vendor-specific agent implementations, or UI.
 - Prefer small composable skills over giant all-purpose prompts.
 - Skills detect, explain, suggest, rewrite, verify, or audit; they should state which mode they support.
 - Never claim external verification, plagiarism detection, citation validation, or source access unless the required evidence/tool is actually available.
