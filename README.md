@@ -2,7 +2,7 @@
 
 Portable, agent-native skills for serious writing, research, editing, citations, manuscripts, books, academic work, and publication-quality review.
 
-**AuthorOps-Skills is the skill layer only.** It contains independently invocable `SKILL.md` units plus the standards needed to make them discoverable, testable, evidence-aware, and interoperable. End-to-end pipelines, workflow orchestration, product code, and vendor-specific agent implementations belong outside this repository.
+**AuthorOps-Skills is a standalone skill library.** It contains independently invocable `SKILL.md` units plus the standards needed to make them discoverable, testable, evidence-aware, and interoperable. Workflow orchestration, application code, product systems, and vendor-specific agent implementations are outside this repository.
 
 ## Core idea
 
@@ -30,10 +30,10 @@ skills/<domain>/<skill-name>/SKILL.md
                 └── quality gates
                          │
                          ▼
-                external agent / workflow
+                    skill result
 ```
 
-The repository deliberately does **not** define pipelines. A future AuthorOps pipeline layer may consume these skills without changing their ownership or independence.
+Each skill is independently usable. The repository defines the skill itself and the standards around it; it does not define a workflow, orchestration system, application, or service that consumes the skill library.
 
 ## Canonical references
 
