@@ -8,7 +8,7 @@ Each skill lives at:
 
 `skills/<domain>/<skill-name>/SKILL.md`
 
-A skill must represent one reusable intellectual operation. A skill may be composed by an external agent, but should not encode an end-to-end workflow.
+A skill must represent one reusable intellectual operation. Skills are independently invocable and must not encode an end-to-end workflow.
 
 ## Domains
 
